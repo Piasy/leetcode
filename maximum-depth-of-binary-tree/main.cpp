@@ -49,6 +49,10 @@ int maxDepth(TreeNode *root)
 
 int dfs(TreeNode *root)
 {//stack dfs: 44ms...
+    if (root == NULL)
+    {
+        return 0;
+    }
     int depth = 1;
 
     //dfs
